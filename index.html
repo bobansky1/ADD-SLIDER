@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+    <title>Document</title>
+</head>
+<body>
+<div class="container">
+  <div class="title">Swiper ADD</div>
+  <div class="block__swiper">
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper" id="carouselInner">
+        <!-- Slides -->
+        <div class="swiper-slide"> 
+        <img src="img/index-2-glav.png"  data-src="img/index-2-glav.png" loading="lazy" alt="" class="swiper-lazy">
+        <div class="swiper-lazy-preloader"></div>
+        </div>
+        <div class="swiper-slide">     
+            <img src="img/nout.png" data-src="img/nout.png" loading="lazy" alt="" class="swiper-lazy">
+            <div class="swiper-lazy-preloader"></div>
+        </div>
+        <div class="swiper-slide">   
+            <div class="swiper-lazy-preloader"></div>
+            <img src="img/stat.png" data-src="img/stat.png" loading="lazy" alt="" class="swiper-lazy">
+        </div>
+        <div class="swiper-slide">   
+            <div class="swiper-lazy-preloader"></div>
+            <img src="img/nout.png" data-src="img/nout.png" loading="lazy" alt="" class="swiper-lazy">
+        </div>
+        <div class="swiper-slide">   
+            <div class="swiper-lazy-preloader"></div>
+            <img src="img/stat.png" data-src="img/stat.png" loading="lazy" alt="" class="swiper-lazy">
+        </div>
+        <div class="swiper-slide">   
+            <div class="swiper-lazy-preloader"></div>
+            <img src="img/index-2-glav.png" data-src="img/index-2-glav.png" loading="lazy" alt="" class="swiper-lazy">
+        </div> 
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  <form id="imageForm" enctype="multipart/form-data" class="add-foto">
+    <label for="imageInput" class="btn-variabl" id="fileLabel">Выберите изображение</label>
+    <input type="file" name="image" id="imageInput" multiple class="input-file">
+    <button type="submit" class="btn-variabl">Добавить изображение</button>
+  </form>
+        <!-- Модальное окно -->
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="modalImg">
+        </div>
+</div>
+
+      
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="app.js"></script>
+
+</body>
+</html>

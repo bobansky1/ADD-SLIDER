@@ -1,0 +1,119 @@
+.container{
+  max-width: 1200px;
+  padding: 0 15px;
+  margin:  0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.title{
+  font-weight: 600;
+font-size: 36px;
+font-family: COMIC SANS MS;
+text-align: center;
+  background: linear-gradient(90deg, #f13e0a 0%, #8b2406 100%);
+  background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+
+.block__swiper{
+  margin-top: 100px;
+  position: relative;
+  display: inline-flex;
+}
+.swiper {
+  width: 1000px;
+  height: 300px;
+ 
+}
+  
+
+.swiper-slide img{
+  max-width: 300px;
+  object-fit: scale-down;
+  height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+  /* Стили для модального окна */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 50px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+  
+.modal-content {
+    display: block;
+    margin: auto;
+    width: 80%;
+    max-width: 700px;
+}
+  
+.close {
+    color: #fff;
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.swiper-button-next, .swiper-button-prev{
+  color: #f13e0a !important;
+}
+.swiper-pagination-bullet-active {
+
+  background: #f13e0a !important;
+}
+.add-foto{
+  display: flex;
+
+  max-width: 600px;
+  margin: 0 auto;
+  gap: 25px;
+  padding-top: 40px;
+}
+.btn-variabl{
+  font-family: COMIC SANS MS;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 15px 30px;
+ box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.2);
+  background:  #f13e0a;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  transition: all 0.4s ease 0s;
+  cursor: pointer;
+}
+.btn-variabl:hover{
+  background-color: #8b2406;
+  box-shadow: 6px 6px 10px 0 rgba(0, 0, 0, 0.35);
+}
+.input-file {
+  display: none; /* Скрываем элемент */
+}
+@media (max-width:600px){
+    .add-foto{
+        flex-direction: column;
+    }
+    .btn-variabl{
+        text-align: center;
+    }
+    .block__swiper{
+        margin-top: 40px;
+    }
+ .swiper-button-next{
+  right: -15px !important;
+    }
+    .swiper-button-prev{
+  left: -15px !important;
+    }
+}
